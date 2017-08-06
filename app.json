@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "muzica",
+    "description": "An empty new project",
+    "slug": "muzica",
+    "privacy": "public",
+    "sdkVersion": "19.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "primaryColor": "#cccccc",
+    "icon": "./assets/icons/app-icon.png",
+    "loading": {
+      "icon": "./assets/icons/loading-icon.png",
+      "hideExponentText": false
+    },
+    "packagerOpts": {
+      "assetExts": [
+        "ttf",
+        "mp4"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.musiconlinelisten"
+    },
+    "android": {
+      "package": "com.musiconlinelisten"
+    },
+    "isDetached": true,
+    "detach": {
+      "scheme": "expd2e1aff1fdba44c7827e0792385d9a1c",
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v1.18.1-sdk19.0.0-854eed43-2f5f-4e07-9072-59e972f4a97d.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v1.18.2-sdk19.0.0-c64df65d-97f0-4db3-ae82-951bfa43093c.tar.gz"
+    }
+  }
+}

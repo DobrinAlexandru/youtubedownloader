@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/frag_container"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/white"
+            android:text="Give us a Google +1"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="If you enjoyed the app, please support us by giving a +1 on Google Plus!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.google.android.gms.plus.PlusOneButton xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+            android:id="@+id/plus_one_button"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            plus:annotation="inline"
+            plus:size="standard" />
+    </RelativeLayout>
+   
+</FrameLayout>

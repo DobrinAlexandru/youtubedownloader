@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <style name="Theme.Exponent.Light" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowTranslucentStatus" tools:targetApi="19">true</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccentLight</item>
+    <item name="android:windowBackground">@color/white</item>
+  </style>
+
+  <style name="Theme.Transparent" parent="android:Theme">
+  <item name="android:windowIsTranslucent">true</item>
+  <item name="android:windowBackground">@android:color/transparent</item>
+  <item name="android:windowContentOverlay">@null</item>
+  <item name="android:windowNoTitle">true</item>
+  <item name="android:windowIsFloating">true</item>
+  <item name="android:backgroundDimEnabled">false</item>
+</style>
+
+  <style name="rateme__AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <item name="colorAccent">@android:color/darker_gray</item>
+    <item name="android:textColorPrimary">@android:color/background_light</item>
+    <item name="android:colorBackground">@android:color/background_dark</item>
+  </style>
+</resources>

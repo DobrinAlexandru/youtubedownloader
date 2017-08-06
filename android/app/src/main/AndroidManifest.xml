@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.musiconlinelisten">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@style/Theme.Exponent.Light"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="expd2e1aff1fdba44c7827e0792385d9a1c" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity
+            android:name=".utils.ParentActivity"
+            android:autoRemoveFromRecents="true"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/store"
+            android:label=""
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name=".utils.BabyActivity"
+            android:autoRemoveFromRecents="true"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/store"
+            android:label=""
+            android:launchMode="singleInstance"
+            android:noHistory="true" />
+        <activity
+            android:name=".utils.SameActivity"
+            android:theme="@style/rateme__AppCompatAlertDialogStyle"
+            android:excludeFromRecents="true"
+            android:autoRemoveFromRecents="true" />
+        <receiver
+            android:name=".utils.Receiver"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/store"
+            android:label="Play Store"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
